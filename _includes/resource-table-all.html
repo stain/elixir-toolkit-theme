@@ -2,7 +2,7 @@
 {%- assign country_pages = site.pages | where_exp: "item", "item.search_exclude != true" | where_exp:"item","item.national_resources != nil" %}
 {%- unless tools.size == 0 %}
 {%- if include.tag %}
-<a class="collapse-title d-flex justify-content-between" data-bs-toggle="collapse" href="#tools-table" role="button" aria-expanded="false" aria-controls="tools-table"><h2>Relevant tools and resources</h2><i class="fa-solid fa-arrow-down-from-line"></i></a>
+<a class="collapse-title d-flex justify-content-between align-items-end" data-bs-toggle="collapse" href="#tools-table" role="button" aria-expanded="false" aria-controls="tools-table"><h2>Relevant tools and resources</h2><i class="fa-solid fa-up-right-and-down-left-from-center pb-2 fs-4"></i></a>
 <div class="collapse" id="tools-table">
 {%- endif %}
 <a class="visually-hidden-focusable" href='#skip-tool-table'>Skip tool table</a>
