@@ -2,7 +2,8 @@
 {%- assign country_pages = site.pages | where_exp: "item", "item.search_exclude != true" | where_exp:"item","item.national_resources != nil" %}
 {%- unless tools.size == 0 %}
 {%- if include.tag %}
-<h2>Relevant tools and resources</h2>
+<a class="collapse-title d-flex justify-content-between" data-bs-toggle="collapse" href="#tools-table" role="button" aria-expanded="false" aria-controls="tools-table"><h2>Relevant tools and resources</h2><i class="fa-solid fa-arrow-down-from-line"></i></a>
+<div class="collapse" id="tools-table">
 {%- endif %}
 <a class="visually-hidden-focusable" href='#skip-tool-table'>Skip tool table</a>
 <div class="table-responsive mt-4 mb-5">
@@ -160,4 +161,7 @@
 </a>
 {%- endunless %}
 <div id="skip-tool-table"></div>
+{%- if include.tag %}
+</div>
+{%- endif %}
 {%- endunless %}
