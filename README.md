@@ -109,6 +109,7 @@ This will start the docker container and serve the website locally. Make sure th
 - [Applied Bioinformatics and Biostatistics intranet page](https://intranet.psb.ugent.be/abb/)
 - [FAIRDOM](https://fair-dom.org/)
 - [Australian BioCommons How-to-Guides](https://australianbiocommons.github.io/how-to-guides/)
+- [TRE-FX](https://trefx.uk/)
 
 ## Used packages
 
